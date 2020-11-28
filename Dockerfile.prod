@@ -7,4 +7,6 @@ RUN apt-get update && apt-get install -y \
         yarn
 WORKDIR /product-register_2
 COPY Gemfile Gemfile.lock /product-register_2/
-RUN bundle install  
+RUN bundle install
+COPY . .
+CMD [ "rails", "s" ]

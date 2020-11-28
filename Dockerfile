@@ -8,4 +8,3 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /product-register_2
 COPY Gemfile Gemfile.lock /product-register_2/
 RUN bundle install  
-CMD [ "rails", "s" ]
